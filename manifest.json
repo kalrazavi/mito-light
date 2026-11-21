@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Mito Light",
+  "version": "1.1.0",
+  "description": "Your weekly red light routine: today's spots, a timer for each, and a check-off when it's done.",
+  "permissions": [
+    "alarms",
+    "notifications",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Mito Light"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mito Light · position check</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="camera.css">
+</head>
+<body class="cam">
+  <header>
+    <h1 id="spot">Position check</h1>
+    <label class="mute"><input type="checkbox" id="voice" checked> Voice</label>
+  </header>
+  <div id="stage">
+    <video id="video" playsinline muted></video>
+    <svg id="guide" viewBox="0 0 100 75" preserveAspectRatio="none"><ellipse cx="50" cy="38" rx="16" ry="27"/></svg>
+    <div id="read"><b id="cm">–</b><span id="target"></span></div>
+  </div>
+  <p id="say">Starting the camera…</p>
+  <div class="row">
+    <button id="start" class="primary"></button>
+  </div>
+  <details id="calib">
+    <summary>Calibrate distance</summary>
+    <p>Measure from the lamp to your face with a ruler, sit there facing the camera, then press the button. Do it once; redo it if you move the webcam or the lamp.</p>
+    <div class="line">I am <input type="number" id="known" min="10" max="100" value="30"> cm from the lamp <button id="setcal">Set</button></div>
+    <p id="calstate"></p>
+  </details>
+  <p class="ref">The picture stays on this computer. Nothing is recorded or sent anywhere.</p>
+  <script type="module" src="camera.js"></script>
+</body>
+</html>

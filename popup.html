@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mito Light</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Mito Light</h1>
+    <span id="count"></span>
+    <button id="viewbtn">Calendar</button>
+  </header>
+  <section id="cal" class="off"></section>
+  <main id="main">
+    <nav id="week" aria-label="Days of the week"></nav>
+    <p id="dayline"></p>
+    <svg id="body" viewBox="0 0 240 200" role="img" aria-label="Front and back of a figure with today's spots lit up"></svg>
+    <div id="bar"><i></i></div>
+    <nav id="trail" aria-label="Today's spots"></nav>
+    <section id="card"></section>
+    <div class="daybar">
+      <button id="reset">Reset today</button>
+    </div>
+    <details id="settings">
+      <summary>Lights, reminder, rotation</summary>
+      <div class="set">
+        <label class="line"><input type="checkbox" id="remind"> Remind me at <input type="time" id="at" step="900"></label>
+        <label class="line">Daily ceiling <input type="number" id="cap" min="5" max="120"> min</label>
+        <div class="line">Front of neck this week: <b id="neckday"></b> <button id="neckflip">Swap</button></div>
+        <div class="line">Thursday cheek this week: <b id="side"></b> <button id="sideflip">Swap</button></div>
+        <div id="lights"></div>
+        <p class="ref" id="ref"></p>
+      </div>
+    </details>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
