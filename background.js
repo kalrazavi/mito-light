@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Ali Razavi. All rights reserved. Owned and controlled solely by Ali Razavi: no licence check, no remote control, no backdoor. Terms: see the LICENSE file.
 import { load, plan, startRun, completeRun, MODES } from './core.js';
 
 const DAILY = 'daily', ENDED = 'ended';
@@ -17,12 +18,12 @@ async function schedule() {
   chrome.alarms.create('daily', { when: when.getTime() });
 }
 
-// Badge: ▶ while a timer runs, otherwise how many of today's spots are left.
+// Badge: ▶ while a timer runs, otherwise nothing. The spots-left count lives in the hover title only.
 async function sync() {
   const st = await load();
   const { p, left } = open(st);
   chrome.action.setBadgeBackgroundColor({ color: '#d8432e' });
-  chrome.action.setBadgeText({ text: st.run ? '▶' : left.length ? String(left.length) : '' });
+  chrome.action.setBadgeText({ text: st.run ? '▶' : '' });
   chrome.action.setTitle({ title: `Mito Light\n${p.title}${p.req.length ? ` · ${left.length} of ${p.req.length} spots left` : ''}` });
   if (!left.length) chrome.notifications.clear(DAILY);
 }
