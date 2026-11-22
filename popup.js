@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Ali Razavi. All rights reserved. Owned and controlled solely by Ali Razavi: no licence check, no remote control, no backdoor. Terms: see the LICENSE file.
 import { load, plan, mark, resetDay, startRun, stopRun, completeRun, saveCfg, clock, tip, key, neckOnMonday, thuSide, MODES, REF, EVIDENCE, specDose } from './core.js';
 import { body } from './body.js';
 import { calendar, streak } from './calendar.js';

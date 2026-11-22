@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Ali Razavi. All rights reserved. Owned and controlled solely by Ali Razavi: no licence check, no remote control, no backdoor. Terms: see the LICENSE file.
 // Position check for the face passes. Watches the webcam, works out how far the face is and whether
 // it is centred, and says which way to move. Everything runs on this machine.
 

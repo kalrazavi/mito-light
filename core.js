@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Ali Razavi. All rights reserved. Owned and controlled solely by Ali Razavi: no licence check, no remote control, no backdoor. Terms: see the LICENSE file.
 // Shared by the popup and the background worker: the spots, the weekly rotation, and storage.
 
 // Never NIR on its own: every spot gets red, with or without NIR, so the skin benefits too.

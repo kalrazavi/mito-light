@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Ali Razavi. All rights reserved. Owned and controlled solely by Ali Razavi: no licence check, no remote control, no backdoor. Terms: see the LICENSE file.
 // The figure: front view on the left, back view on the right, with a glow on each of the day's spots.
 // Left/right are the wearer's, so the left cheek sits on the right of the front view.
 

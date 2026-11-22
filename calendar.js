@@ -1,3 +1,4 @@
+// Copyright (c) 2026 Ali Razavi. All rights reserved. Owned and controlled solely by Ali Razavi: no licence check, no remote control, no backdoor. Terms: see the LICENSE file.
 // Year calendar. A day with every scheduled spot done gets a check, a day with some gets a half mark,
 // a past day with none gets a cross. Sundays are rest days and never count as missed.
 
